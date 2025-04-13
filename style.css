@@ -1,0 +1,133 @@
+/* Add a background color or image to the entire body */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #f2f2f2, #d9e3f0); /* Example gradient background */
+    color: #333;
+    min-height: 100vh; /* Ensure the background stretches full height */
+}
+
+/* Header styles */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Center the main container and add padding */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* Card styles for sections */
+.card {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Form Grid */
+.grid-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.grid-form input,
+.grid-form select {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.grid-form button {
+    padding: 0.75rem;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.grid-form button:hover {
+    background-color: #0055aa;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.filters input {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+/* Table */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+a {
+    color: #003366;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Action Buttons */
+.btn {
+    padding: 0.75rem;
+    border: 1px solid black; /* Adds a border to make the buttons visible */
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+    background-color: transparent; /* Makes buttons background transparent */
+    color: black; /* Sets the text color to black */
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Remove specific button colors */
+.btn.view,
+.btn.edit,
+.btn.delete {
+    background-color: transparent; /* Remove background */
+    color: inherit; /* Use the default text color */
+}
